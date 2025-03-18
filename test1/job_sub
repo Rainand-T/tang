@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH --job-name=test
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=01:00:0
+#SBATCH --output=model.out
+#SBATCH --account=coms035124
+#SBATCH --partition=test
+
+# Run the executable
+python testfile.py
